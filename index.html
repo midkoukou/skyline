@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skyline Live Weather Wallpaper</title>
+<meta name="description" content="The real sky, live on your Mac's desktop. Support and help for Skyline.">
+<link rel="icon" href="icon.png">
+<style>
+  :root { --bg: #fdf3e7; --ink: #1d1b19; --muted: #6b645c; --card: #ffffffb3; --line: #00000014; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #151413; --ink: #f2efea; --muted: #a39d95; --card: #ffffff0d; --line: #ffffff17; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 17px/1.6 ui-rounded, -apple-system, BlinkMacSystemFont, "SF Pro Rounded", system-ui, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 56px 16px 80px; }
+  header { display: flex; align-items: center; gap: 18px; }
+  header img { width: 76px; height: 76px; }
+  h1 { font-size: 36px; line-height: 1.1; letter-spacing: -0.5px; margin: 0; }
+  .sub { color: var(--muted); margin: 4px 0 0; }
+  .hero { width: 100%; border-radius: 16px; margin: 32px 0 8px; display: block; box-shadow: 0 18px 50px #0000002e; }
+  h2 { font-size: 22px; margin: 44px 0 10px; }
+  .card { background: var(--card); border-radius: 18px; padding: 18px 22px; margin-top: 16px; }
+  details { border-top: 1px solid var(--line); padding: 14px 0; }
+  details:last-of-type { border-bottom: 1px solid var(--line); }
+  summary { cursor: pointer; font-weight: 600; }
+  details p { margin: 8px 0 0; color: var(--muted); }
+  a { color: inherit; }
+  footer { margin-top: 56px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <div>
+      <h1>Skyline</h1>
+      <p class="sub">The real sky, live on your Mac's desktop.</p>
+    </div>
+  </header>
+
+  <img class="hero" src="hero.jpg" alt="Skyline showing a live sky as the Mac desktop">
+
+  <h2>Support</h2>
+  <div class="card">
+    Need help, found a bug or have an idea? Email
+    <a href="mailto:mokoukou7@gmail.com?subject=Skyline%20support">mokoukou7@gmail.com</a>
+    and I'll get back to you, usually within two days. Please include your macOS version and Mac model.
+  </div>
+
+  <h2>Questions</h2>
+  <details>
+    <summary>Where is the app after I open it?</summary>
+    <p>Skyline lives in the menu bar (the cloud icon at the top of the screen), not in the Dock. Click it and choose Settings… to change anything.</p>
+  </details>
+  <details>
+    <summary>I don't see the sky on my desktop.</summary>
+    <p>The sky sits behind your windows. Show the desktop (swipe out with four fingers, or press F11) to see it. If your trial has ended, choose a plan in Settings to bring it back.</p>
+  </details>
+  <details>
+    <summary>Can I use it without sharing my location?</summary>
+    <p>Yes. Deny location access and type a city in Settings → Desktop → Location.</p>
+  </details>
+  <details>
+    <summary>How do I install the screensaver?</summary>
+    <p>Open Settings → Desktop → Screen saver → Install. macOS will ask you to confirm, then choose Skyline in System Settings → Screen Saver.</p>
+  </details>
+  <details>
+    <summary>Does it drain my battery?</summary>
+    <p>Skyline pauses itself whenever your desktop is covered and runs at a lower frame rate in Low Power Mode. You can also pick a lower quality in Settings.</p>
+  </details>
+  <details>
+    <summary>How do I cancel my subscription or restore a purchase?</summary>
+    <p>Subscriptions are managed by Apple: open the App Store, click your name, then Account Settings → Subscriptions. To restore a purchase on a new Mac, click Restore in Skyline's Settings.</p>
+  </details>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> ·
+    Weather data provided by <a href="https://weatherkit.apple.com/legal-attribution.html">Apple Weather</a> ·
+    Moon imagery courtesy of NASA's Scientific Visualization Studio
+  </footer>
+</main>
+</body>
+</html>
